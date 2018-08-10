@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+   
+    <link rel="stylesheet" href="csslogin/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+
+    <title>FRONT END SOLUTIONS FOR INTERNET OF THINGS APPLICATION.</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom icons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+        <link rel="manifest" href="img/icons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">FRONT END SOLUTIONS FOR IOT APPLICATION</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page1.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page2.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page3.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page4.html">Find Us</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">FRONT END SOLUTIONS FOR IOT APPLICATION.</h1>
+        
+          <div id="login-box">
+            <div class="left">
+              <h1>Sign up</h1>
+              
+              <input type="text" name="username" placeholder="Username" />
+              <input type="text" name="email" placeholder="E-mail" />
+              <input type="password" name="password" placeholder="Password" />
+              <input type="password" name="password2" placeholder="Retype password" />
+              
+              <input type="submit" name="signup_submit" value="Sign me up" href="page3.html"/>
+            </div>
+            
+            <div class="right">
+              <span class="loginwith">Sign in with<br/>social network</span>
+              
+              <button class="social-signin facebook">Log in with facebook</button>
+              <button class="social-signin twitter">Log in with Twitter</button>
+              <button class="social-signin google"><a href="javascript:poptastic('https://accounts.google.com/o/oauth2/auth?scope=https://www.google.com/m8/feeds&client_id=21302922996.apps.googleusercontent.com&redirect_uri=https://www.example.com/back&response_type=token');"></a>Log in with Google</button>
+              
+              
+              <a href="javascript:poptastic('https://accounts.google.com/o/oauth2/auth?scope=https://www.google.com/m8/feeds&client_id=21302922996.apps.googleusercontent.com&redirect_uri=https://www.example.com/back&response_type=token');">Log in with Google</a>
+                <script>
+                    function poptastic(url) {
+                      var newWindow = window.open(url, 'name', 'height=600,width=450');
+                      if (window.focus) {
+                        newWindow.focus();
+                      }
+                    }
+                
+                </script>
+                    <script>
+                function onSignIn(googleUser) 
+                {
+                 // var profile = googleUser.getBasicProfile();
+                  //console.log('ID:','282738266238u0rvn132h3sjha3d643econq1rbq65ib.apps.googleusercontent.com' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                  //console.log('Name: ','dublin-211700' + profile.getName());
+                  //console.log('Image URL: ' + profile.getImageUrl());
+                  //console.log('Email: ',"https://www.googleapis.com/oauth2/v3/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"xIxPZTGedqTxEkQWiCTwK0_0 + profile.getEmail()); // This is null if the 'email' scope is not present.
+                  "web";{"client_id","282738266238u0rvn132h3sjha3d643econq1rbq65ib.apps.googleusercontent.com","project_id":"dublin-211700","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://www.googleapis.com/oauth2/v3/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"xIxPZTGedqTxEkQWiCTwK0_0"}}
+                }
+
+                </script>
+              </div>
+            </div>
+
+          </div>
+            
+          
+        
+        </div>
+      </div>
+    </div>
+
+        <!-- Service Worker -->
+        <script type="text/javascript">
+          if (navigator.serviceWorker.controller) {
+          console.log('[PWA Builder] active service worker found, no need to register')
+          } else {
+          //Register the ServiceWorker
+          navigator.serviceWorker.register('pwabuilder-sw.js', {
+          scope: './'
+          }).then(function(reg) {
+          console.log('Service worker has been registered for scope:'+ reg.scope);
+          });
+          }
+          </script>
+          <!-- /Service Worker -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
